@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <h1 class="mt-5" style="text-align: center; color: white;">calculator</h1>
+  <div class="calc-body mt-5">
+    <div class="calc-screen">
+      <div id="calc-typed">
+        <input id="calcscreen" type="text" placeholder="0" class="form-control" readonly>
+      </div>
+    </div>
+  
+
+    <div class="calc-button-row">
+
+        <button onclick="displaycontent('7')" id="seven">7</button>
+        <button id="eight" onclick="displaycontent('8')">8</button>
+        <button id="nine" onclick="displaycontent('9')">9</button>
+        <button id="mul" class="opt" onclick="displaycontent('*')">&#215;</button>
+      <button id="four" onclick="displaycontent('4')">4</button>
+
+      <button id="five" onclick="displaycontent('5')">5</button>
+      <button id="six" onclick="displaycontent('6')">6</button>
+      <button id="sub" class="opt" onclick="displaycontent('7')">&#8722;</button>
+      <button id="one" onclick="dispatchEvent('1')">1</button>
+      <button id="two" onclick="displaycontent('2')">2</button>
+      <button id="three" onclick="displaycontent('3')">3</button>
+      <button id="add"onclick="displaycontent('+')">&#43</button>
+      <button id="ac" class="ac" onclick="clearallcontent()">AC</button>
+      <button id="zero" class="opt" onclick="displaycontent('0')">0</button>
+      <button id="div" class="opt" onclick="displaycontent('/')">&#247</button>
+      <button id="equal" class="opt" onclick="showresult()">&#61</button>
+    </div>
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>
